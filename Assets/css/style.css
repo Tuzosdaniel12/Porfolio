@@ -261,6 +261,7 @@ footer section section ul li a{
  (h1 and nav)as well*/
   header section{
     flex:1 0;
+
   }
   header section h1{
     font-size: 2.7em;
@@ -294,8 +295,12 @@ EVENLY THRU THE SCREEN*/
     flex-direction: column;
   }
 
+  header nav{
+    height: 40%;
+  }
   header section{
     width: var(--hundred-percent);
+
   }
   header section h1{
     text-align: center;
@@ -306,7 +311,7 @@ EVENLY THRU THE SCREEN*/
     width:var(--hundred-percent);
   }
   .responsive-nav li {
-    padding-top: 4.5%;
+    padding-top: 1%;
     width:var(--hundred-percent);
     height: var(--hundred-percent);
   }
@@ -343,6 +348,10 @@ sections as screen size goes down*/
   body{
     font-size: .59em;
   }
+
+  .responsive-nav li{
+    padding-top: 4%;
+  }
 }
 /*------MEDIA RESPONSIVE MAX WIDTH 400-----------*/
 /*work examples flex to columns*/
@@ -371,4 +380,7 @@ sections as screen size goes down*/
   body{
     font-size: .49em;
   }
+  .responsive-nav li {
+    padding-top: 6%;
+}
 }
