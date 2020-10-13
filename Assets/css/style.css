@@ -42,6 +42,7 @@ is also going to center text vertically*/
     font-size: 3.5em;
     padding: 3.5% 3.5%;
   }
+  
   header nav{
     flex: 6 0;
     align-self: var(--letsCenter);
@@ -100,9 +101,10 @@ margin/align self the quote right on the right bottom corner */
   color: var(--h1-color);
   align-self: flex-end;
   font-size: 2.5em;
-  height: 20%;
+  height: 15%;
   margin-right: 4%;
-  margin-bottom: 2%;
+  margin-bottom: 1.5%;
+
 }
 /*----------END OF BANNER---------*/
 /*----------START OF MAIN---------*/
@@ -228,4 +230,115 @@ footer section section ul li a{
   text-decoration-color: var(--main-font-color);
 }
 
+/*------MEDIA RESPONSIVE MAX WIDTH 1071-----------*/
+@media screen and (max-width:1071px){
+  body{
+    font-size:9px;
+  }
 
+  header section{
+    flex:2 0;
+  }
+  header section h1{
+    padding: 3.5% 3.5%;
+  }
+  header nav{
+    flex: 4 0;
+  }
+  .responsive-nav li {
+    text-align: var(--letsCenter);
+  }
+}
+
+/*------MEDIA RESPONSIVE MAX WIDTH 720-----------*/
+@media screen and (max-width:720px){
+  body{
+    font-size:8px;
+  }
+
+  header section{
+    flex:1 0;
+  }
+  header section h1{
+    padding: 3.5% 3.5%;
+  }
+  header nav{
+    flex: 3 0;
+  }
+  .responsive-nav li {
+    text-align: var(--letsCenter);
+  }
+}
+
+/*------MEDIA RESPONSIVE MAX WIDTH 590-----------*/
+@media screen and (max-width:590px){
+  body{
+    font-size:8px;
+  }
+/* CHANGED HEADER H1 AND NAV TO COLUM DISPLAY
+AND GAVE THEM 100% WIDHT SO THEY SPREAD
+EVENLY THRU THE SCREEN*/
+  header{
+    flex-direction: column;
+    
+  }
+
+  header section{
+    width: var(--hundred-percent);
+  }
+  header section h1{
+    text-align: center;
+    width: var(--hundred-percent);
+  }
+
+  .responsive-nav{
+    clear:both;
+    width:var(--hundred-percent);
+  }
+  .responsive-nav li {
+    padding-top: 4.5%;
+    width:var(--hundred-percent);
+    height: var(--hundred-percent);
+  }
+  
+  header nav{
+    width: var(--hundred-percent);
+  }
+
+/* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
+
+.main-body-info{
+  flex-direction: column;
+
+}
+
+.section-tittle{
+  border-right: none;
+  border-bottom: solid;
+  text-align: left;
+  padding-right: 1%;
+  padding-left: 1%;
+  width: var(--hundred-percent);
+}
+
+.section-info{
+  width: var(--hundred-percent);
+}
+
+}
+
+/*------MEDIA RESPONSIVE MAX WIDTH 400-----------*/
+@media screen and (max-width:400px){
+
+  .work-examples{
+    flex-direction: column;
+  
+  }
+  .main-exp{
+    height: 48%;
+  }
+  .secondary-exp{
+   width: var(--hundred-percent);
+   height: 12.5%; 
+}
+}
