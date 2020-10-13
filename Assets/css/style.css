@@ -8,6 +8,8 @@
     --hundred-percent: 100%;
     --letsCenter: center;
     --hooverColor: #ad9c06;
+    --main-background-color:#EEEEF7;
+    --main-font-color: #445877;
   }
   
   body {
@@ -76,11 +78,14 @@ focus and use flexbox*/
 }
 /*----------END OF HEADER---------*/
 /*----------START OF BANNER---------*/
+/* this is adding a picture as my banner, it has flex
+display because so ican move the quote inside where i want it 
+to move*/
 .banner {
   clear: both;
   height: 20%;
-  width: 100%;
-  margin-bottom: 25px;
+  width: var(--hundred-percent);
+  
   background-image: url("../images/seattle.jpg");
   background-size: cover;
   background-position: center;
@@ -89,6 +94,8 @@ focus and use flexbox*/
   align-content: flex-start;
 }
 
+/*set color of background and font of h2
+margin/align self the quote right on the right bottom corner */
 .banner h2{
   background-color: var(--color-mostly-used);
   color: var(--h1-color);
@@ -97,6 +104,33 @@ focus and use flexbox*/
   height: 20%;
   margin-right: 4%;
   margin-bottom: 2%;
-  
 }
+/*----------END OF BANNER---------*/
+/*----------START OF MAIN---------*/
+main{
+  width: var(--hundred-percent);
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--main-background-color);
+  color: var(--main-font-color);
+}
+main h1{
+  font-size: 4em;
+}
+
+.aboutMe{
+  width: var(--hundred-percent);
+  height: 20%;
+}
+.work{
+  width: var(--hundred-percent);
+  height: 60%;
+}
+.contactMe{
+  width: var(--hundred-percent);
+  height: 20%;
+}
+
 
