@@ -149,6 +149,7 @@ as set font size and aligns h1 to the right*/
   height: var(--hundred-percent);
   width: var(--hundred-percent);
 }
+
 .section-tittle{
   flex: 1 0 20%;
   border-right: solid;
@@ -162,22 +163,51 @@ as set font size and aligns h1 to the right*/
   font-size: 1.5em;
 }
 /*----------INSIDE WORK SECTION---------*/
-
+/* In here I divide my work experience 
+into five, my main work is set as 50%
+the other four take 50% and also divided 
+equally, I set my H1 and border color
+  */
 .work-examples{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: var(--hundred-percent);
   height: var(--hundred-percent);
+  margin-right: 2%;
 }
 .main-exp{
   width:var(--hundred-percent);
+  height: 48%;
   border: solid;
-  padding-bottom: 1%;
+  border-color: var(--color-mostly-used);
 }
 .secondary-exp{
- width: 50%;
  border-color: var(--color-mostly-used);
  border: solid;
+ height: 24%;
+ width: 49.5%;
+ border-color: var(--color-mostly-used);
+}
+/*----------INSIDE EACH SECTION IN WORK SECTION---------*/
+/*
+I used flex box again so i can move h1 on 
+the bottom of each work experience section*/
+.position-h1{
+  display: flex;
+  width: var(--hundred-percent);
+  height: var(--hundred-percent);
+  
 }
 
+.position-h1 h1{
+  width: max-content;
+  padding: 2% 2% 2% 2%;
+  margin-bottom: 2%;
+  font-size: 1.5em;
+  color: var(--h1-color);
+  background-color: var(--color-mostly-used);
+  align-self: flex-end;
+  
+}
 
