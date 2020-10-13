@@ -231,16 +231,13 @@ footer section section ul li a{
 }
 
 /*------MEDIA RESPONSIVE MAX WIDTH 1071-----------*/
-@media screen and (max-width:1071px){
-  body{
-    font-size:9px;
-  }
-
+@media screen and (max-width:1078px){
+ 
   header section{
     flex:2 0;
   }
   header section h1{
-    padding: 3.5% 3.5%;
+    font-size: 3.3em;
   }
   header nav{
     flex: 4 0;
@@ -249,38 +246,48 @@ footer section section ul li a{
     text-align: var(--letsCenter);
   }
 }
+/*------MEDIA H1 SIZEN MOD-----------*/
+@media screen and (max-width:900px){
+
+  header section h1{
+    font-size: 2.9em;
+  }
+
+}
 
 /*------MEDIA RESPONSIVE MAX WIDTH 720-----------*/
-@media screen and (max-width:720px){
-  body{
-    font-size:8px;
-  }
+@media screen and (max-width:740px){
 
   header section{
     flex:1 0;
   }
   header section h1{
-    padding: 3.5% 3.5%;
+    font-size: 2.7em;
   }
   header nav{
-    flex: 3 0;
+    flex: 2 0;
+  }
+  .responsive-nav{
+    clear:both;
+    width:80%;
   }
   .responsive-nav li {
     text-align: var(--letsCenter);
   }
+
+  .main-body-info  > h1{
+    font-size: 3em;
+  }
 }
 
 /*------MEDIA RESPONSIVE MAX WIDTH 590-----------*/
-@media screen and (max-width:590px){
-  body{
-    font-size:8px;
-  }
+@media screen and (max-width:679px){
+ 
 /* CHANGED HEADER H1 AND NAV TO COLUM DISPLAY
 AND GAVE THEM 100% WIDHT SO THEY SPREAD
 EVENLY THRU THE SCREEN*/
   header{
     flex-direction: column;
-    
   }
 
   header section{
@@ -290,7 +297,6 @@ EVENLY THRU THE SCREEN*/
     text-align: center;
     width: var(--hundred-percent);
   }
-
   .responsive-nav{
     clear:both;
     width:var(--hundred-percent);
@@ -309,16 +315,16 @@ EVENLY THRU THE SCREEN*/
 
 .main-body-info{
   flex-direction: column;
-
 }
-
 .section-tittle{
   border-right: none;
   border-bottom: solid;
   text-align: left;
   padding-right: 1%;
   padding-left: 1%;
+  margin-bottom: 2%;
   width: var(--hundred-percent);
+  flex: 0 0 0;
 }
 
 .section-info{
@@ -326,10 +332,20 @@ EVENLY THRU THE SCREEN*/
 }
 
 }
+/*------MEDIA RESPONSIVE MAX WIDTH 500-----------*/
+@media screen and (max-width:500px){
 
+  body{
+    font-size: .59em;
+  }
+}
 /*------MEDIA RESPONSIVE MAX WIDTH 400-----------*/
+/*work examples flex to columns*/
 @media screen and (max-width:400px){
 
+  body{
+    font-size: .53em;
+  };
   .work-examples{
     flex-direction: column;
   
@@ -341,4 +357,13 @@ EVENLY THRU THE SCREEN*/
    width: var(--hundred-percent);
    height: 12.5%; 
 }
+}
+
+/*------MEDIA RESPONSIVE MAX WIDTH 300-----------*/
+/**/
+@media screen and (max-width:310px){
+
+  body{
+    font-size: .49em;
+  }
 }
