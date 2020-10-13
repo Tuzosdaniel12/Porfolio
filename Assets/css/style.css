@@ -79,13 +79,12 @@ focus and use flexbox*/
 /*----------END OF HEADER---------*/
 /*----------START OF BANNER---------*/
 /* this is adding a picture as my banner, it has flex
-display because so ican move the quote inside where i want it 
+display because so i can move the quote inside where i want it 
 to move*/
 .banner {
   clear: both;
   height: 20%;
   width: var(--hundred-percent);
-  
   background-image: url("../images/seattle.jpg");
   background-size: cover;
   background-position: center;
@@ -107,30 +106,78 @@ margin/align self the quote right on the right bottom corner */
 }
 /*----------END OF BANNER---------*/
 /*----------START OF MAIN---------*/
+/*setting the rest of the body to main and diving each 
+column to 1:3:1 ratio, setting background 
+and font colors too
+
+*/
 main{
   width: var(--hundred-percent);
-  height: 75%;
+  height: 74%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--main-background-color);
   color: var(--main-font-color);
+  padding-top: 1%;
 }
 main h1{
-  font-size: 4em;
+  font-size: 3.8em;
 }
 
 .aboutMe{
   width: var(--hundred-percent);
-  height: 20%;
+  height: 19%;
+  padding-bottom: 1.5%;
 }
 .work{
   width: var(--hundred-percent);
-  height: 60%;
+  height: 65%;
+  padding-bottom: 1.5%;
 }
+
 .contactMe{
   width: var(--hundred-percent);
-  height: 20%;
+  height: 12%;
+}
+/* this divides the inside of the three 
+main section in to two ratio of 1 to 4, targets h1 tags , padding on bottoms 
+as set font size and aligns h1 to the right*/
+
+.main-body-info{
+  display: flex;
+  height: var(--hundred-percent);
+  width: var(--hundred-percent);
+}
+.section-tittle{
+  flex: 1 0 20%;
+  border-right: solid;
+  text-align: right;
+  padding-right: 1%;
+}
+
+.section-info{
+  flex: 4 0 80%;
+  padding:0 1% 0 1%;
+  font-size: 1.5em;
+}
+/*----------INSIDE WORK SECTION---------*/
+
+.work-examples{
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--hundred-percent);
+  height: var(--hundred-percent);
+}
+.main-exp{
+  width:var(--hundred-percent);
+  border: solid;
+  padding-bottom: 1%;
+}
+.secondary-exp{
+ width: 50%;
+ border-color: var(--color-mostly-used);
+ border: solid;
 }
 
 
