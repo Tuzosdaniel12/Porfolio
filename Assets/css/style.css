@@ -257,7 +257,8 @@ footer section section ul li a{
 
 /*------MEDIA RESPONSIVE MAX WIDTH 720-----------*/
 @media screen and (max-width:740px){
-
+/*as the screen size goes does the flex ratio of children of header
+ (h1 and nav)as well*/
   header section{
     flex:1 0;
   }
@@ -278,13 +279,16 @@ footer section section ul li a{
   .main-body-info  > h1{
     font-size: 3em;
   }
+  .main-body-info  > .section-info {
+    font-size: 1.3em;
+  }
 }
 
 /*------MEDIA RESPONSIVE MAX WIDTH 590-----------*/
 @media screen and (max-width:679px){
  
-/* CHANGED HEADER H1 AND NAV TO COLUM DISPLAY
-AND GAVE THEM 100% WIDHT SO THEY SPREAD
+/* CHANGED HEADER H1 AND NAV TO COLUMn DISPLAY
+AND GAVE THEM 100% WIDTH SO THEY SPREAD
 EVENLY THRU THE SCREEN*/
   header{
     flex-direction: column;
@@ -334,7 +338,8 @@ EVENLY THRU THE SCREEN*/
 }
 /*------MEDIA RESPONSIVE MAX WIDTH 500-----------*/
 @media screen and (max-width:500px){
-
+/* just changed font to  fit on the 
+sections as screen size goes down*/
   body{
     font-size: .59em;
   }
