@@ -16,7 +16,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     margin: auto;
-    height: var(--hundred-percent);
+    height: 175%;
     width: var(--hundred-percent);
     
   }
@@ -210,4 +210,22 @@ the bottom of each work experience section*/
   align-self: flex-end;
   
 }
+/*------------------------FOOTER----------------------------*/
+.footer-contact{
+  height: var(--hundred-percent);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  color: var(--main-font-color);
+}
+.footer-links{
+  align-self: center;
+  font-size: 1.5em; 
+}
+
+footer section section ul li a{
+  color: var(--main-font-color);
+  text-decoration-color: var(--main-font-color);
+}
+
 
