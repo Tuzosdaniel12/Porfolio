@@ -100,7 +100,7 @@ to move*/
   display: var(--letsFlex);
   justify-content: var(--flex-end);
   align-content: flex-start;
-  box-shadow: var(--shadow);
+  
 }
 
 /*set color of background and font of h2
@@ -191,7 +191,6 @@ equally, I set my H1 and border color
   height: 48%;
   border: solid;
   border-color: var(--color-mostly-used);
-  box-shadow: var(--shadow);
 }
 .secondary-exp{
  border-color: var(--color-mostly-used);
@@ -199,7 +198,6 @@ equally, I set my H1 and border color
  height: 24%;
  width: 49.5%;
  border-color: var(--color-mostly-used);
- box-shadow: var(--shadow);
 }
 
 /*----------INSIDE EACH SECTION IN WORK SECTION---------*/
