@@ -13,6 +13,7 @@
     --column: column;
     --letsFlex: flex;
     --flex-end: flex-end;
+    --shadow: 0px 0px 31px -4px rgba(0,0,0,0.75);
   }
   
   body {
@@ -30,6 +31,7 @@
       height: 10%;
       background-color: var(--header-color);
       display: var(--letsFlex);
+      box-shadow: var(--shadow);
       
   }
 /*trying to match the rations of example of 
@@ -98,6 +100,7 @@ to move*/
   display: var(--letsFlex);
   justify-content: var(--flex-end);
   align-content: flex-start;
+  box-shadow: var(--shadow);
 }
 
 /*set color of background and font of h2
@@ -188,6 +191,7 @@ equally, I set my H1 and border color
   height: 48%;
   border: solid;
   border-color: var(--color-mostly-used);
+  box-shadow: var(--shadow);
 }
 .secondary-exp{
  border-color: var(--color-mostly-used);
@@ -195,6 +199,7 @@ equally, I set my H1 and border color
  height: 24%;
  width: 49.5%;
  border-color: var(--color-mostly-used);
+ box-shadow: var(--shadow);
 }
 
 /*----------INSIDE EACH SECTION IN WORK SECTION---------*/
@@ -325,7 +330,7 @@ footer section section ul li a:hover{
     font-size: 3em;
   }
   .main-body-info  > .section-info {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 
 }
@@ -355,7 +360,7 @@ footer section section ul li a:hover{
   }
   
   .main-body-info  > .section-info {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
