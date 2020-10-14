@@ -221,6 +221,9 @@ equally, I set my H1 and border color
 .background-image-and-h2-pos section h4{
   font-size: .5em;
 }
+.background-image-and-h2-pos a:hover{
+  color: var(--hooverColor);
+}
 
 
 /*
