@@ -10,6 +10,9 @@
     --hooverColor: #ad9c06;
     --main-background-color:#EEEEF7;
     --main-font-color: #445877;
+    --column: column;
+    --letsFlex: flex;
+    --flex-end: flex-end;
   }
   
   body {
@@ -26,7 +29,7 @@
       width: var(--hundred-percent);
       height: 10%;
       background-color: var(--header-color);
-      display: flex;
+      display: var(--letsFlex);
       
   }
 /*trying to match the rations of example of 
@@ -58,7 +61,7 @@ is also going to center text vertically*/
     float: right;
     width:55%;
     height: var(--hundred-percent);
-    display: flex;
+    display: var(--letsFlex);
     align-content: var(--letsCenter);
   }
 
@@ -91,9 +94,9 @@ to move*/
   width: var(--hundred-percent);
   background-image: url("../images/seattle.jpg");
   background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: flex-end;
+  background-position: var(--letsCenter);
+  display: var(--letsFlex);
+  justify-content: var(--flex-end);
   align-content: flex-start;
 }
 
@@ -102,7 +105,7 @@ margin/align self the quote right on the right bottom corner */
 .banner h2{
   background-color: var(--color-mostly-used);
   color: var(--h1-color);
-  align-self: flex-end;
+  align-self: var(--flex-end);
   font-size: 2.5em;
   height: 15%;
   margin-right: 4%;
@@ -118,9 +121,9 @@ and font colors too
 */
 main{
   width: var(--hundred-percent);
-  height: 74%;
-  display: flex;
-  flex-direction: column;
+  height: 90%;
+  display: var(--letsFlex);
+  flex-direction: var(--column);
   background-color: var(--main-background-color);
   color: var(--main-font-color);
   padding-top: 1%;
@@ -131,25 +134,25 @@ main h1{
 
 .aboutMe{
   width: var(--hundred-percent);
-  height: 19%;
+  height: 15%;
   padding-bottom: 1.5%;
 }
 .work{
   width: var(--hundred-percent);
-  height: 65%;
+  height: 70%;
   padding-bottom: 1.5%;
 }
 
 .contactMe{
   width: var(--hundred-percent);
-  height: 12%;
+  height: 10%;
 }
 /* this divides the inside of the three 
 main section in to two ratio of 1 to 4, targets h1 tags , padding on bottoms 
 as set font size and aligns h1 to the right*/
 
 .main-body-info{
-  display: flex;
+  display: var(--letsFlex);
   height: var(--hundred-percent);
   width: var(--hundred-percent);
 }
@@ -173,7 +176,7 @@ the other four take 50% and also divided
 equally, I set my H1 and border color
   */
 .work-examples{
-  display: flex;
+  display: var(--letsFlex);
   flex-wrap: wrap;
   justify-content: space-between;
   width: var(--hundred-percent);
@@ -260,13 +263,13 @@ the bottom of each work experience section*/
 /*------------------------FOOTER----------------------------*/
 .footer-contact{
   height: var(--hundred-percent);
-  display: flex;
+  display: var(--letsFlex);
   justify-content: space-around;
-  align-content: center;
+  align-content: var(--letsCenter);
   color: var(--main-font-color);
 }
 .footer-links{
-  align-self: center;
+  align-self: var(--letsCenter);
   font-size: 1.5em; 
 }
 
@@ -342,7 +345,6 @@ footer section section ul li a:hover{
     flex: 2 0;
   }
   .responsive-nav{
-    clear:both;
     width:80%;
   }
   .responsive-nav li a{
@@ -353,7 +355,7 @@ footer section section ul li a:hover{
   }
   
   .main-body-info  > .section-info {
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 
@@ -367,7 +369,7 @@ EVENLY THRU THE SCREEN*/
   flex: 0 0;
 }
   header{
-    flex-direction: column;
+    flex-direction: var(--column);
   }
 
   header nav{
@@ -378,7 +380,7 @@ EVENLY THRU THE SCREEN*/
 
   }
   header section h1{
-    text-align: center;
+    text-align: var(--letsCenter);
     width: var(--hundred-percent);
   }
   .responsive-nav{
@@ -398,7 +400,7 @@ EVENLY THRU THE SCREEN*/
 /* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
 
 .main-body-info{
-  flex-direction: column;
+  flex-direction: var(--column);
 }
 .section-tittle{
   border-right: none;
@@ -414,7 +416,7 @@ EVENLY THRU THE SCREEN*/
   width: var(--hundred-percent);
 }
 .main-body-info  > .section-info {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 }
@@ -424,6 +426,12 @@ EVENLY THRU THE SCREEN*/
 sections as screen size goes down*/
   body{
     font-size: .59em;
+  }
+  main{
+    height: 110%;
+  }
+  .work{
+    height: 90%;
   }
 
   .responsive-nav li{
@@ -437,8 +445,10 @@ sections as screen size goes down*/
   body{
     font-size: .53em;
   };
+  
+
   .work-examples{
-    flex-direction: column;
+    flex-direction: var(--column);
   
   }
   .main-exp{
