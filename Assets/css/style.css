@@ -402,7 +402,7 @@ EVENLY THRU THE SCREEN*/
     width: var(--hundred-percent);
   }
 
-/* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
+  /* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
 main{
   height: 130%;
 }
@@ -429,6 +429,8 @@ main{
 .main-body-info  > .section-info {
   font-size: 1em;
 }
+
+
 
 }
 /*------MEDIA RESPONSIVE MAX WIDTH 500-----------*/
