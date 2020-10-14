@@ -4,7 +4,7 @@
 
 * [Task](#Task)
 * [Employers](#Employers)
-* [AcceptanceCriteria](#AcceptanceCriteria)
+* [Acceptance Criteria](#Acceptance)
 * [Process](#Process)
 * [HTML](#HTML)
 * [CSS](#CSS)
