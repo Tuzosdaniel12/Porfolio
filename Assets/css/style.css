@@ -16,7 +16,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     margin: auto;
-    height: 185%;
+    height: 175%;
     width: var(--hundred-percent);
     
   }
@@ -246,7 +246,7 @@ footer section section ul li a{
     text-align: var(--letsCenter);
   }
 }
-/*------MEDIA H1 SIZEN MOD-----------*/
+/*------MEDIA H1 SIZE MOD-----------*/
 @media screen and (max-width:900px){
 
   header section h1{
@@ -254,6 +254,13 @@ footer section section ul li a{
   }
   .banner h2{
     font-size: 2em;
+  }
+
+  .main-body-info  > h1{
+    font-size: 3em;
+  }
+  .main-body-info  > .section-info {
+    font-size: 1.3em;
   }
 
 }
