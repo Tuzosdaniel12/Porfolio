@@ -1,15 +1,16 @@
 
-# Portfolio-Table Of Content
+# Daniel Soledad Portfolio 
+## Table Of Content
 
 * [Task](#Task)
 * [Employers](#Employers)
-* [Acceptance](#Acceptance Criteria)
+* [AcceptanceCriteria](#AcceptanceCriteria)
 * [Process](#Process)
 * [HTML](#HTML)
 * [CSS](#CSS)
 * [Links](#Links)
 
-
+ 
 
 ## Task
 
