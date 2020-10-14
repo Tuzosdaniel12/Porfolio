@@ -18,6 +18,7 @@
     margin: auto;
     height: 175%;
     width: var(--hundred-percent);
+  
     
   }
   /*----------START OF HEADER---------*/
@@ -152,16 +153,16 @@ as set font size and aligns h1 to the right*/
 }
 
 .section-tittle{
-  flex: 1 0 20%;
+  flex: 1 0;
   border-right: solid;
   text-align: right;
   padding-right: 1%;
 }
 
 .section-info{
-  flex: 4 0 80%;
+  flex: 4 0;
   padding:0 1% 0 1%;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 /*----------INSIDE WORK SECTION---------*/
 /* In here I divide my work experience 
@@ -190,27 +191,63 @@ equally, I set my H1 and border color
  width: 49.5%;
  border-color: var(--color-mostly-used);
 }
+
 /*----------INSIDE EACH SECTION IN WORK SECTION---------*/
+.background-image-and-h2-pos{
+  height: var(--hundred-percent);
+  width: var(--hundred-percent);
+  position: relative;
+}
+.background-image-and-h2-pos a{
+  height: var(--hundred-percent);
+  width: var(--hundred-percent);
+}
+.background-image-and-h2-pos a img{
+  height: var(--hundred-percent);
+  width: var(--hundred-percent);
+}
+
+.background-image-and-h2-pos section{
+  position: absolute;
+  background-color: var(--color-mostly-used);
+  top:80%;
+}
+#target-h2-h4-in-smaller-divs section{
+  top:70%;
+}
+.background-image-and-h2-pos section h2{
+  font-size: 1em;
+}
+.background-image-and-h2-pos section h4{
+  font-size: .5em;
+}
+
+
 /*
 I used flex box again so i can move h1 on 
 the bottom of each work experience section*/
+
+/*
 .position-h1{
   display: flex;
   width: var(--hundred-percent);
   height: var(--hundred-percent);
-  
 }
 
 .position-h1 h1{
   width: max-content;
   padding: 2% 2% 2% 2%;
   margin-bottom: 2%;
-  font-size: 1.5em;
   color: var(--h1-color);
   background-color: var(--color-mostly-used);
   align-self: flex-end;
-  
+  text-decoration: none;
 }
+.position-h1 h1{
+  font-size: 1em;
+}
+*/
+
 /*------------------------FOOTER----------------------------*/
 .footer-contact{
   height: var(--hundred-percent);
@@ -245,7 +282,8 @@ footer section section ul li a{
     text-align: var(--letsCenter);
   }
 }
-/*------MEDIA H1 SIZE MOD-----------*/
+/*------MEDIA H1 SIZE MOD in here i used the direct child attribut
+-----------*/
 @media screen and (max-width:900px){
 
   header section h1{
@@ -301,6 +339,9 @@ footer section section ul li a{
 /* CHANGED HEADER H1 AND NAV TO COLUMn DISPLAY
 AND GAVE THEM 100% WIDTH SO THEY SPREAD
 EVENLY THRU THE SCREEN*/
+.section-tittle{
+  flex: 0 0;
+}
   header{
     flex-direction: column;
   }
@@ -343,7 +384,6 @@ EVENLY THRU THE SCREEN*/
   padding-left: 1%;
   margin-bottom: 1%;
   width: var(--hundred-percent);
-  flex: 0 0 10%;
 }
 
 .section-info{
