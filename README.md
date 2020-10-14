@@ -1,6 +1,16 @@
 
 # Portfolio-Table Of Content
 
+* [Task](#Task)
+* [Employers](#Employers)
+* [Acceptance](#Acceptance Criteria)
+* [Process](#Process)
+* [HTML](#HTML)
+* [CSS](#CSS)
+* [Links](#Links)
+
+
+
 ## Task
 
 * Create website from scratch, that will showcase skills and talents. 
@@ -36,7 +46,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Process
-
+```
 * 1. started html code and build the structure from top to bottom.
 
 * 2. As I  was building the html structure I was making sure that I used semantic/accessability practices
@@ -53,6 +63,7 @@ as I finished a section I would move to the next.
 * 7. As i move down I started to notice all the variables I kept reusing and made one for each term that i kept using.
 
 * 8. When Finish styling css, I started to make the site useable from many platforms as possible, as the size of the screen when down, I slowly started moving percentages,ratios and font sizes down.
+```
 ## HTML
 
 ## CSS
