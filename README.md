@@ -4,7 +4,7 @@
 
 * [Task](#Task)
 * [Employers](#Employers)
-* [Acceptance Criteria](#Acceptance)
+* [Acceptance Criteria](#Acceptance-Criteria)
 * [Process](#Process)
 * [HTML](#HTML)
 * [CSS](#CSS)
@@ -26,7 +26,7 @@ SO THAT I can review samples of their work and assess whether they're a good can
 ```
 
 
-## Acceptance Criteria
+## Acceptance-Criteria
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
