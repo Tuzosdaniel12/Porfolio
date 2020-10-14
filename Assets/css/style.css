@@ -16,7 +16,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10px;
     margin: auto;
-    height: 175%;
+    height: 180%;
     width: var(--hundred-percent);
   
     
@@ -72,11 +72,13 @@ focus and use flexbox*/
 
   .responsive-nav li a{
     color: var(--color-mostly-used);
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .responsive-nav li a:hover{
-  color: var(--hooverColor);
+    opacity:1;
+    transition-duration: 1s;
+    color: var(--hooverColor);
 }
 /*----------END OF HEADER---------*/
 /*----------START OF BANNER---------*/
@@ -205,6 +207,8 @@ equally, I set my H1 and border color
 .background-image-and-h2-pos a img{
   height: var(--hundred-percent);
   width: var(--hundred-percent);
+  opacity: .7;
+  
 }
 
 .background-image-and-h2-pos section{
@@ -221,8 +225,10 @@ equally, I set my H1 and border color
 .background-image-and-h2-pos section h4{
   font-size: .5em;
 }
-.background-image-and-h2-pos a:hover{
+.background-image-and-h2-pos a img:hover{
   color: var(--hooverColor);
+  opacity:1;
+  transition-duration: 1s;
 }
 
 
@@ -268,9 +274,12 @@ footer section section ul li a{
   color: var(--main-font-color);
   text-decoration-color: var(--main-font-color);
 }
+footer section section ul li a:hover{
+  color: var(--hooverColor);
+}
 
 /*------MEDIA RESPONSIVE MAX WIDTH 1071-----------*/
-@media screen and (max-width:1078px){
+@media screen and (max-width:1100px){
  
   header section{
     flex:2 0;
@@ -281,9 +290,14 @@ footer section section ul li a{
   header nav{
     flex: 4 0;
   }
-  .responsive-nav li {
+  .responsive-nav{
+    width: 70%;
     text-align: var(--letsCenter);
   }
+  .responsive-nav li a{
+    font-size: 2.5em;
+  }
+
 }
 /*------MEDIA H1 SIZE MOD in here i used the direct child attribut
 -----------*/
@@ -292,8 +306,16 @@ footer section section ul li a{
   header section h1{
     font-size: 2.9em;
   }
+  
   .banner h2{
     font-size: 2em;
+  }
+  .responsive-nav{
+    clear:both;
+    width:75%;
+  }
+  .responsive-nav li a{
+    font-size: 2.3em;
   }
 
   .main-body-info  > h1{
@@ -323,10 +345,9 @@ footer section section ul li a{
     clear:both;
     width:80%;
   }
-  .responsive-nav li {
-    text-align: var(--letsCenter);
+  .responsive-nav li a{
+    font-size: 2em;
   }
-
   .main-body-info  > h1{
     font-size: 2.3em;
   }
