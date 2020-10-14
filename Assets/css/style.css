@@ -398,6 +398,12 @@ EVENLY THRU THE SCREEN*/
   }
 
 /* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
+main{
+  height: 120%;
+}
+.work{
+  height: 100%;
+}
 
 .main-body-info{
   flex-direction: var(--column);
