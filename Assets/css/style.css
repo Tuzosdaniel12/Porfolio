@@ -118,7 +118,6 @@ main{
   height: 74%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-color: var(--main-background-color);
   color: var(--main-font-color);
   padding-top: 1%;
@@ -288,10 +287,11 @@ footer section section ul li a{
   }
 
   .main-body-info  > h1{
-    font-size: 3em;
+    font-size: 2.3em;
   }
+  
   .main-body-info  > .section-info {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
@@ -341,9 +341,9 @@ EVENLY THRU THE SCREEN*/
   text-align: left;
   padding-right: 1%;
   padding-left: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   width: var(--hundred-percent);
-  flex: 0 0 0;
+  flex: 0 0 10%;
 }
 
 .section-info{
