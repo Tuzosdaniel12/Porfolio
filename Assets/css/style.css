@@ -330,7 +330,7 @@ footer section section ul li a:hover{
     font-size: 3em;
   }
   .main-body-info  > .section-info {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
 }
@@ -360,7 +360,7 @@ footer section section ul li a:hover{
   }
   
   .main-body-info  > .section-info {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
@@ -404,10 +404,7 @@ EVENLY THRU THE SCREEN*/
 
   /* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
 main{
-  height: 130%;
-}
-.work{
-  height: 110%;
+  width: var(--hundred-percent);
 }
 
 .main-body-info{
@@ -430,6 +427,18 @@ main{
   font-size: 1em;
 }
 
+/*work examples flex to columns*/
+.work-examples{
+  flex-direction: var(--column);
+
+}
+.main-exp{
+  height: 19%;
+}
+.secondary-exp{
+ width: var(--hundred-percent);
+ height: 19%; 
+}
 
 
 }
@@ -452,25 +461,13 @@ sections as screen size goes down*/
   }
 }
 /*------MEDIA RESPONSIVE MAX WIDTH 400-----------*/
-/*work examples flex to columns*/
+
 @media screen and (max-width:400px){
 
   body{
     font-size: .53em;
   };
-  
 
-  .work-examples{
-    flex-direction: var(--column);
-  
-  }
-  .main-exp{
-    height: 48%;
-  }
-  .secondary-exp{
-   width: var(--hundred-percent);
-   height: 12.5%; 
-}
 }
 
 /*------MEDIA RESPONSIVE MAX WIDTH 300-----------*/
