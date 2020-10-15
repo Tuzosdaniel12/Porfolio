@@ -66,9 +66,15 @@ as I finished a section I would move to the next.
 * 8. When Finish styling css, I started to make the site useable from many platforms as possible, as the size of the screen when down, I slowly started moving percentages,ratios and font sizes down.
 ```
 ## HTML
-
+![HTML](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/html-code/html-01.png)
+![HTML](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/html-code/html-02.png)
+![HTML](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/html-code/html-03.png)
 ## CSS
-
+![CSS](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/css/css-01.png)
+![CSS](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/css/css-02.png)
+![CSS](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/css/css-03.png)
+![CSS](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/css/css-04.png)
+![CSS](https://github.com/Tuzosdaniel12/Porfolio/blob/main/Assets/images/css/css-05.png)
 ## Links
 * Website
 https://tuzosdaniel12.github.io/Porfolio/
