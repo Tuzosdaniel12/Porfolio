@@ -240,7 +240,10 @@ equally, I set my H1 and border color
 
 /*
 I used flex box again so i can move h1 on 
-the bottom of each work experience section*/
+the bottom of each work experience section
+remove this section I couldn't find
+ a way of how to make the whole background a link, only the 
+ label*/
 
 /*
 .position-h1{
@@ -257,6 +260,7 @@ the bottom of each work experience section*/
   background-color: var(--color-mostly-used);
   align-self: flex-end;
   text-decoration: none;
+  opacity: .7;
 }
 .position-h1 h1{
   font-size: 1em;
