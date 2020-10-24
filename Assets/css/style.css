@@ -124,7 +124,7 @@ and font colors too
 */
 main{
   width: var(--hundred-percent);
-  height: 90%;
+  height: 100%;
   display: var(--letsFlex);
   flex-direction: var(--column);
   background-color: var(--main-background-color);
@@ -407,6 +407,13 @@ EVENLY THRU THE SCREEN*/
   /* MAKING THE ENTIRE BODY FLEX COLUMN AS WELL*/
 main{
   width: var(--hundred-percent);
+  height: 180%;
+}
+.aboutMe{
+  height: 10%;
+}
+.work{
+  height: 100%;
 }
 
 .main-body-info{
@@ -439,7 +446,7 @@ main{
 }
 .secondary-exp{
  width: var(--hundred-percent);
- height: 19%; 
+ height: 19%;
 }
 
 
