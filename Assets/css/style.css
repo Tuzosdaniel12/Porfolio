@@ -22,6 +22,7 @@
     margin: auto;
     height: 180%;
     width: var(--hundred-percent);
+    line-height: 3em;
   
     
   }
@@ -171,6 +172,7 @@ as set font size and aligns h1 to the right*/
   flex: 4 0;
   padding:0 1% 0 1%;
   font-size: 2em;
+  
 }
 /*----------INSIDE WORK SECTION---------*/
 /* In here I divide my work experience 
@@ -182,9 +184,10 @@ equally, I set my H1 and border color
   display: var(--letsFlex);
   flex-wrap: wrap;
   justify-content: space-between;
-  width: var(--hundred-percent);
+  width: 90%;
+  margin: auto;
   height: var(--hundred-percent);
-  margin-right: 2%;
+  
 }
 .main-exp{
   width:var(--hundred-percent);
@@ -315,6 +318,7 @@ footer section section ul li a:hover{
 
   header section h1{
     font-size: 2.9em;
+    
   }
   
   .banner h2{
@@ -332,7 +336,8 @@ footer section section ul li a:hover{
     font-size: 3em;
   }
   .main-body-info  > .section-info {
-    font-size: 1.3em;
+    font-size: 2em;
+    line-height: 1.5em;
   }
 
 }
@@ -341,6 +346,7 @@ footer section section ul li a:hover{
 @media screen and (max-width:740px){
 /*as the screen size goes does the flex ratio of children of header
  (h1 and nav)as well*/
+
   header section{
     flex:1 0;
 
@@ -362,8 +368,9 @@ footer section section ul li a:hover{
   }
   
   .main-body-info  > .section-info {
-    font-size: 1.2em;
+    font-size: 1.9em;
   }
+ 
 }
 
 /*------MEDIA RESPONSIVE MAX WIDTH 590-----------*/
@@ -431,9 +438,11 @@ main{
 
 .section-info{
   width: var(--hundred-percent);
+  
 }
 .main-body-info  > .section-info {
-  font-size: 1em;
+
+  font-size: 1.4em;
 }
 
 /*work examples flex to columns*/
@@ -459,8 +468,9 @@ sections as screen size goes down*/
     font-size: .59em;
   }
   main{
-    height: 110%;
+    width: 100% ;
   }
+  
   .work{
     height: 90%;
   }
@@ -474,7 +484,7 @@ sections as screen size goes down*/
 @media screen and (max-width:400px){
 
   body{
-    font-size: .53em;
+    font-size: .45em;
   };
 
 }
@@ -484,7 +494,7 @@ sections as screen size goes down*/
 @media screen and (max-width:310px){
 
   body{
-    font-size: .49em;
+    font-size: .40em;
   }
   .responsive-nav li {
     padding-top: 6%;
