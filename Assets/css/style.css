@@ -17,7 +17,7 @@
   }
   
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Fredoka One', cursive;
     font-size: 10px;
     margin: auto;
     height: 180%;
@@ -229,7 +229,7 @@ equally, I set my H1 and border color
   top:80%;
 }
 #target-h2-h4-in-smaller-divs section{
-  top:70%;
+  top:65%;
 }
 .background-image-and-h2-pos section h2{
   font-size: 1em;
