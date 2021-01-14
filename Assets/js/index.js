@@ -41,7 +41,7 @@ let  imagePosS = listOfLinks.length;
 const startTimer = () =>{
     console.log("Hit timer")
     clearInterval(interval);
-    interval = setInterval(timer, 5000);
+    interval = setInterval(timer, 7000);
 }
 
 const timer = ()=>{
@@ -50,11 +50,16 @@ const timer = ()=>{
     imagePos = checkImagePos(imagePos);
     imagePosS = checkImagePos(imagePosS);
 
-    $('#first').attr("src", listOfLinks[imagePos].image)
-    $('#link-1').attr("href", listOfLinks[imagePos].link)
+    $('#first').delay(2000).fadeOut('slow', function(){
+        $('#first').attr("src", listOfLinks[imagePos].image).fadeIn('slow');
+        $('#link-1').attr("href", listOfLinks[imagePos].link)
+    });
 
-    $('#second').attr("src", listOfLinks[imagePosS].image)
-    $('#link-2').attr("href", listOfLinks[imagePosS].link)
+    $('#second').delay(2000).fadeOut('slow', function(){
+        $('#second').attr("src", listOfLinks[imagePosS].image).fadeIn('slow');
+        $('#link-2').attr("href", listOfLinks[imagePosS].link)
+    });
+ 
 }
 
 function changeImage(e){
@@ -64,11 +69,11 @@ function changeImage(e){
     }else{
         imagePos-=1;
     } 
-    
+
     imagePos = checkImagePos(imagePos);
 
-    $('#first').attr("src", listOfLinks[imagePos].image)
-    $('#link-1').attr("href", listOfLinks[imagePos].link)
+    $('#first').attr("src", listOfLinks[imagePos].image).fadeIn()
+    $('#link-1').attr("href", listOfLinks[imagePos].link).fadeIn()
 }
 
 checkImagePos= (num) =>{
