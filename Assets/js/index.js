@@ -1,7 +1,7 @@
 const $heroEl = $('#work') 
 
 let  imagePos = 0;
-let  imagePosS = 7;
+
 let interval;
 const listOfLinks = [
     {
@@ -27,7 +27,16 @@ const listOfLinks = [
         link:"https://tuzosdaniel12.github.io/Weather-App/",
         image:"Assets/images/Weather-App.png"
     },
+    {
+        link:"https://whispering-brook-42517.herokuapp.com/",
+        image:"Assets/images/Note-Taker.png"
+    },
+    {
+        link:"https://serene-hamlet-18402.herokuapp.com/",
+        image:"Assets/images/My-Team.png"
+    }
 ];
+let  imagePosS = listOfLinks.length;
 
 const startTimer = () =>{
     console.log("Hit timer")
