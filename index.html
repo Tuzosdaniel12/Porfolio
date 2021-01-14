@@ -3,133 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./Assets/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/1156/1156944.svg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/newStyle.css">
     <title>Daniel Soledad Portfolio</title>
 </head>
 <body>
-    <header>
-        <section>
-            <h1>
-                Daniel Soledad
-            </h1>
-        </section>
-        <nav>
-                <ul class="responsive-nav">
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="Assets\Docs\DanielResume.docx" download>Resume</a></li>
-                </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar is-light ">
+      <div class="container ">
+        <div class ="navbar-brand">
+          <a class="navbar-item " href="index.html">
+            <h1 class="is-size-2">Daniel Soledad</h1>
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end is-light">
+            <a href="#aboutme" class="navbar-item">About Me</a>
+            <a href="#work" class="navbar-item">Work</a>
+            <a href="#contactme" class="navbar-item">Contact Me</a>
+            <a href="Assets/Docs/DanielResume.docx" class="navbar-item">Resume</a>
+          </div>
+        </div>  
+      </div>
+    </nav>        
+  </header>
 
-    <figure class="banner"  role="image" aria-label="Love To Code!!">
-        <h2>Love Life, CODE!!</h2>
-    </figure>
+  <main class="bg-img has-text-black">
+    <section class="hero is-fullheight" id="aboutme">
+      <div class="hero-body">
+        <div class="section columns is-desktop bg-color is-medium ">
+          <div class="column">
+            <div class="is-flex is-justify-content-center">
+              <img class="rounded" src="https://avatars2.githubusercontent.com/u/68839236?s=400&u=fb2ecbc1454c8ea69d1cc3551f380ed583cd7e75&v=4">
+            </div>
+          </div>
+          <div class="column is-two-thirds-desktop  has-text-white has-text-centered-mobile is-flex is-flex-direction-column is-justify-content-center">
+            <h1  class="is-size-4 ">About Me</h1>
+            <p class="is-size-5 ">
+              I am a hardworking individual who has for a long time put others first rather than myself. Now, is the time that I put myself first and put to work my dreams. I am very eager for this new chapter in my life and for the future. My favorite hobbies are videos games, fixing broken electronics, watching sports, and making my yard beautiful. I would love to work in a job that can have more flexibility, yet be satisfying to work. I always been interested in technology, and I feel coding is a great part of the revolution of this tech era
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <main>
-        <!--ABOUT ME-->
-        <section class="aboutMe" id="aboutme">
-            <section class="main-body-info">
-                <h1 class="section-tittle">About<br>Me</br></h1>
-                <section class="section-info">I am a hardworking individual who has for a long time put others first rather than myself.
-                    Now, is the time that I put myself first and put to work my dreams. 
-                    I am very eager for this new chapter in my life and for the future.
-                    My favorite hobbies are videos games, fixing broken electronics, watching sports, and making my yard beautiful.
-                    I would love to work in a job that can have more flexibility, yet be satisfying to work.
-                    I always been interested in technology, and I feel coding is a great part of the revolution of this tech era</section>
-                </section>
-            </section>
-        <!--WORK-->
-        <section class="work" id="work">
-            <section class="main-body-info">
-                <!--SECTION 0NE OF  MAIN CONTENT-->
-                <h1 class="section-tittle">Work</h1>                  
-                <section class="section-info">
-                    <section class="work-examples">
-                        <!--SECTION 0NE OF  MAIN CONTENT-->
-                        <section class="main-exp">
-                            <section class="background-image-and-h2-pos">
-                                <a href="https://mfrisch87.github.io/MovieTrailerMatchUp/" target="_blank">
-                                    <img src="Assets\images\movie.png" alt="Movie Trailer MatchUp Image">
-                                </a>
-                                <section>
-                                    <h2>Movie Trailer MatchUp</h2>
-                                    <h4>All Trailers In One Site</h4>
-                                </section>
-                            </section>
-                        </section>
-                        <!--SECTION TWO OF  MAIN CONTENT-->
-                        <section class="secondary-exp">
-                            <section class="background-image-and-h2-pos" id="target-h2-h4-in-smaller-divs" target="_blank">
-                                <a href="https://tuzosdaniel12.github.io/Weather-App/" target="_blank">
-                                    <img src="Assets\images\weatherApp.jpg" alt="Weather App Image">
-                                </a>
-                                <section>
-                                    <h2>Weather App Image</h2>
-                                    <h4>Simple App that Gets Weather</h4>
-                                </section>
-                            </section>
-                        </section>
-                        <!--SECTION THREE OF  MAIN CONTENT-->
-                        <section class="secondary-exp">
-                            <section class="background-image-and-h2-pos" id="target-h2-h4-in-smaller-divs">
-                                <a href="https://tuzosdaniel12.github.io/Day-Scheduler/" target="_blank">
-                                    <img src="Assets\images\schedulerApp.png" alt="scheduler app image">
-                                </a>
-                                <section>
-                                    <h2>Scheduler App</h2>
-                                    <h4>Simple App to Help Schedule Your Workday.</h4>
-                                </section>
-                            </section>
-                        </section>
-                        <!--SECTION FOUR OF  MAIN CONTENT-->
-                        <section class="secondary-exp">
-                            <section class="background-image-and-h2-pos" id="target-h2-h4-in-smaller-divs">
-                                <a href="https://tuzosdaniel12.github.io/Porfolio/" target="_blank">
-                                    <img src="Assets\images\Horiseon-Marketing.png" alt="Horiseon Marketing image">
-                                </a>
-                                <section>
-                                    <h2>Horiseon Marketing</h2>
-                                    <h4>Accessibility Refactor</h4>
-                                </section>
-                            </section>
-                        </section>
-                        <!--SECTION FIVE OF  MAIN CONTENT-->
-                        <section class="secondary-exp">
-                            <section class="background-image-and-h2-pos" id="target-h2-h4-in-smaller-divs">
-                                <a href="https://tuzosdaniel12.github.io/PasswordGenerator/" target="_blank">
-                                    <img src="Assets\images\Password-Generator.png" alt="Password Generator">
-                                </a>
-                                <section>
-                                    <h2>Password Generator</h2>
-                                    <h4>App that Generates Password</h4>
-                                </section>
-                            </section>
-                        </section>
-                    </section>  
-                </section>
-            </section>
-        </section>
-        <!--CONTACT ME-->
-        <footer class="contactMe" id="contact">
-            <section class="main-body-info">
-                <h1 class="section-tittle">Contact<br>Me</br></h1>
-                <section class="section-info">
-                    <ul class="footer-contact">
-                        <li class="footer-links"><a href="tel:206-280-2585">206-280-2595</a></li>
-                        <li class="footer-links"><a href="mailto:danielsoledad@gmail.com">Email</a></li>
-                        <li class="footer-links"><a href="https://github.com/Tuzosdaniel12" target="_blank">GitHub</a></li>
-                        <li class="footer-links"><a href="https://www.linkedin.com/in/daniel-soledad-1834a61b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8jusDrCiRMyQqnN8jT%2F05Q%3D%3D" target="_blank">Linkedin</a></li>
-                    </ul>
-                </section>
-            </section>
-        </footer>
-    </main>
+    <section class="hero is-fullheight mod-hero-fullh" >
+      <h1  class="has-text-centered has-text-left-tablet is-size-3 has-text-white title">Work Examples</h1>
+      <div class="hero-body hero-body-mod" id="work">
+        <button class="button is-small is-hidden-mobile left" data-target="right"><i class="fas fa-chevron-left"></i></button>
         
+          <div class="carousel_tracker_container  is-flex-direction is-justify-content-center">
+                <a href="https://eat-la-burger-please.herokuapp.com/" id="link-1" class="img-contaiter">
+                  <img class="carousel-images" id="first"  src="Assets\images\burger-example.png" alt="">
+                </a>
+                <a href="https://mfrisch87.github.io/MovieTrailerMatchUp/" id="link-2" >
+                  <img class="carousel-images is-hidden-desktop mt-6" id="second" src="Assets\images\movie.png" alt="">
+                </a>
+                <a href="" class="pt-5">
+                  <img class="carousel-images is-hidden-tablet mt-6 hide" src="Assets\images\Weather-App.png" alt="">
+                </a>
+          </div>
+
+        <button class="button is-small is-hidden-mobile" data-target="right"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <footer class="footer footer-bg-color pb-0 pt-5 mt-5" >
+      <div class="content has-text-centered ">
+        <p>
+          <strong id="contactme" class="has-text-black">Contact Me</a>. 
+        </p>
+        <p>
+            <strong class="footer-links mr-6"><a class="has-text-black" href="tel:206-280-2585">206-280-2595</a></strong>
+            <strong class="footer-links mr-6"><a class="has-text-black" href="mailto:danielsoledad@gmail.com">Email</a></strong>
+            <strong class="footer-links mr-6"><a class="has-text-black" href="https://github.com/Tuzosdaniel12" target="_blank">GitHub</a></strong>
+            <strong class="footer-links"><a class="has-text-black" href="https://www.linkedin.com/in/daniel-soledad-1834a61b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8jusDrCiRMyQqnN8jT%2F05Q%3D%3D" target="_blank">Linkedin</a></strong>
+        </p>
+        <P>
+          <small>
+              <a class="tag is-white is-small" href="https://bulma.io/" target="_blank">BULMA</a>
+              <small>&copy; 2020</small>
+          </small>
+        </P>
+      </div>
+    </footer>
+
+  </main>     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="assets/js/toggle.js"></script>
+   <script src="assets/js/index.js"></script>         
 </body>
 </html>
