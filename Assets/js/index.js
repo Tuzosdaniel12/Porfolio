@@ -1,7 +1,5 @@
 const $heroEl = $('#work') 
 
-let  imagePos = 0;
-
 let interval;
 const listOfLinks = [
     {
@@ -36,7 +34,11 @@ const listOfLinks = [
         image:"Assets/images/My-Team.png"
     }
 ];
-let  imagePosS = listOfLinks.length;
+let  imagePos = 0;
+let  imagePosTwo = listOfLinks.length;
+let  imagePosThree = Math.floor(Math.random() * listOfLinks.length+1);
+
+
 
 const startTimer = () =>{
     console.log("Hit timer")
@@ -46,45 +48,62 @@ const startTimer = () =>{
 
 const timer = ()=>{
     imagePos+=1;
-    imagePosS-=1;
+    imagePosTwo-=1;
+    imagePosThree = Math.floor(Math.random() * listOfLinks.length+1)
+
     imagePos = checkImagePos(imagePos);
-    imagePosS = checkImagePos(imagePosS);
-
-    $('#first').delay(2000).fadeOut('slow', function(){
-        $('#first').attr("src", listOfLinks[imagePos].image).fadeIn('slow');
-        $('#link-1').attr("href", listOfLinks[imagePos].link)
-    });
-
-    $('#second').delay(2000).fadeOut('slow', function(){
-        $('#second').attr("src", listOfLinks[imagePosS].image).fadeIn('slow');
-        $('#link-2').attr("href", listOfLinks[imagePosS].link)
-    });
+    imagePosTwo = checkImagePos(imagePosTwo);
+    imagePosThree = checkImagePos(imagePosThree);
  
+    fadeAttr(imagePos,"#first","#link-1");
+    fadeAttr(imagePosTwo,"#second","#link-2");
+    fadeAttr(imagePosThree,"#third","#link-3")
 }
 
 function changeImage(e){
     e.preventDefault();
     if( $(this).data('target') === "right"){
         imagePos+=1;
+        imagePosTwo+=1;
+        imagePosThree+=1
     }else{
         imagePos-=1;
+        imagePosTwo-=1;
+        imagePosThree-=1;
     } 
 
     imagePos = checkImagePos(imagePos);
+    imagePosTwo = checkImagePos(imagePosTwo);
+    imagePosThree = checkImagePos(imagePosThree);
 
-    $('#first').attr("src", listOfLinks[imagePos].image).fadeIn()
-    $('#link-1').attr("href", listOfLinks[imagePos].link).fadeIn()
+    changeAttr(imagePos,"#first","#link-1");
+    changeAttr(imagePosTwo,"#second","#link-2");
+    changeAttr(imagePosThree,"#third","#link-3")
 }
 
 checkImagePos= (num) =>{
 
     if(num === -1){
         return listOfLinks.length -1
-    }else if(imagePos >= listOfLinks.length){
+    }else if(num >= listOfLinks.length){
         console.log("hit", imagePos)
         return 0
     }
     return num
+}
+
+const fadeAttr = (pos, el,link) =>{
+    $(el).delay(2000).fadeOut('slow', function(){
+        $(el).attr("src", listOfLinks[pos].image).fadeIn('slow');
+        $(link).attr("href", listOfLinks[pos].link)
+    });
+
+}
+const changeAttr = (pos,el,link) =>{
+
+    $(el).attr("src", listOfLinks[pos].image);
+    $(link).attr("href", listOfLinks[pos].link);
+
 }
 
 startTimer();
