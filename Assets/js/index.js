@@ -1,4 +1,5 @@
 const $heroEl = $('#work') 
+const  $navMenu = $('#navMenu');
 
 let interval;
 const listOfLinks = [
@@ -105,8 +106,25 @@ const changeAttr = (pos,el,link) =>{
     $(link).attr("href", listOfLinks[pos].link);
 
 }
+function hideBlock(e){
+    console.log("hit")
+    e.preventDefault();
+    if( $(this).data('target') === "about"){
+
+        $("#work").fadeOut('slow', function(){
+            $("#aboutme").fadeIn('slow');
+        });
+    
+    }else{
+
+        $("#aboutme").fadeOut('slow', function(){
+            $("#work").fadeIn('slow');
+        });
+    }
+}
 
 startTimer();
 
 $heroEl.on("click", "[data-target]", changeImage);
+$navMenu.on("click", "[data-target]", hideBlock)
 

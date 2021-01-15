@@ -14,23 +14,22 @@
 </head>
 <body>
   <header>
-    <nav class="navbar is-light ">
+    <nav class="navbar is-light">
       <div class="container ">
         <div class ="navbar-brand">
           <a class="navbar-item " href="index.html">
             <h1 class="is-size-2">Daniel Soledad</h1>
           </a>
-          <span class="navbar-burger burger" data-target="navMenu">
+          <span class="navbar-burger burger is-light" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-end is-light">
-            <a href="#aboutme" class="navbar-item">About Me</a>
-            <a href="#examples" class="navbar-item">Work</a>
-            <a href="#contactme" class="navbar-item">Contact Me</a>
+        <div id="navMenu" class="navbar-menu is-light">
+          <div class="navbar-end">
+            <a href="#aboutme" data-target="about" class="navbar-item navbar-mod">About Me</a>
+            <a href="#examples"  data-target="work-examples" class="navbar-item">Work</a>
             <a href="Assets/Docs/DanielResume.pdf" class="navbar-item">Resume</a>
           </div>
         </div>  
@@ -38,10 +37,9 @@
     </nav>        
   </header>
 
-  <main class="bg-img has-text-black">
+  <main>
     <section class="hero is-fullheight" id="aboutme">
-      <div class="hero-body">
-        <div class="section columns is-desktop bg-color is-medium ">
+        <div class="section columns is-desktop about-me-div">
           <div class="column">
             <div class="is-flex is-justify-content-center">
               <img class="rounded" src="https://avatars2.githubusercontent.com/u/68839236?s=400&u=fb2ecbc1454c8ea69d1cc3551f380ed583cd7e75&v=4">
@@ -50,51 +48,58 @@
           <div class="column is-two-thirds-desktop  has-text-white has-text-centered-mobile is-flex is-flex-direction-column is-justify-content-center">
             <h1  class="is-size-4 ">About Me</h1>
             <p class="is-size-5 ">
-              I am a hardworking individual who has for a long time put others first rather than myself. Now, is the time that I put myself first and put to work my dreams. I am very eager for this new chapter in my life and for the future. My favorite hobbies are videos games, fixing broken electronics, watching sports, and making my yard beautiful. I would love to work in a job that can have more flexibility, yet be satisfying to work. I always been interested in technology, and I feel coding is a great part of the revolution of this tech era
+              I am a hardworking individual who has for a long time put others first rather than myself. Now, is the time that I put
+              dreams to work. I am very eager for this new chapter in my life and for my future. I always been interested in
+              technology, and I feel coding is a great part of the revolution of this tech era. The art of coding has brought me joy and
+              satisfaction in many ways; the enjoyment of building, fixing, exploring and many more. Lets code!
             </p>
           </div>
         </div>
-      </div>
     </section>
 
-    <section class="hero is-fullheight mod-hero-fullh" >
-      <h1  class="has-text-centered has-text-left-tablet is-size-3 has-text-white title">Work Examples</h1>
-      <div class="hero-body hero-body-mod" id="work">
-        <button data-target="left"><i class="fas fa-chevron-left"></i></button>
-        
-          <div class="carousel_tracker_container  is-flex-direction is-justify-content-center" id="examples">
-                <a href="https://eat-la-burger-please.herokuapp.com/" id="link-1" class="img-contaiter" target="_blank">
-                  <img class="carousel-images" id="first"  src="Assets\images\burger-example.png" alt="">
-                </a>
-                <a href="https://mfrisch87.github.io/MovieTrailerMatchUp/" id="link-2" target="_blank">
-                  <img class="carousel-images is-hidden-desktop mt-6" id="second" src="Assets\images\movie.png" alt="">
-                </a>
-                <a href="https://tuzosdaniel12.github.io/Weather-App/" id="link-3" class="pt-5" target="_blank">
-                  <img class="carousel-images is-hidden-tablet mt-6 hide" id="third"src="Assets\images\Weather-App.png" alt="">
-                </a>
+    <section class="hero is-fullheight hide" id="work">
+          <div class="carousel_tracker_container" id="examples">
+              <a href="https://eat-la-burger-please.herokuapp.com/" id="link-1" target="_blank">
+                <div data-target="left" class="button-container is-flex is-flex-direction-column is-justify-content-center">
+                  <i class="fas fa-chevron-left fa-lg"></i>
+                </div>
+                <img class="carousel-images" id="first"  src="Assets\images\burger-example.png" alt="">
+
+                <div  data-target="right" class="button-container button-container-right is-flex is-flex-direction-column is-justify-content-center">
+                  <i class="fas fa-chevron-right fa-lg is-align-self-flex-end"></i>
+                </div>
+              </a>
           </div>
-
-        <button  data-target="right"><i class="fas fa-chevron-right"></i></button>
-      </div>
     </section>
 
-    <footer class="footer footer-bg-color pb-0 pt-5 mt-5" >
+    <footer class="footer footer-mod pb-2 pt-2" id="contactme">
       <div class="content has-text-centered ">
         <p>
-          <strong id="contactme" class="has-text-black">Contact Me</a>. 
+            <strong class="footer-links mr-6">
+              <a class="icon-color" href="tel:206-280-2585">
+                <i class="fas fa-phone fa-lg"></i>
+              </a>
+            </strong>
+            <strong class="footer-links mr-6 ">
+              <a class="icon-color" href="mailto:danielsoledad@gmail.com">
+                <i class="fas fa-at fa-lg"></i>
+              </a>
+            </strong>
+            <strong class="footer-links mr-6">
+              <a class="icon-color" href="https://github.com/Tuzosdaniel12" target="_blank">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </strong>
+            <strong class="footer-links">
+              <a class="icon-color" href="https://www.linkedin.com/in/daniel-soledad-1834a61b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8jusDrCiRMyQqnN8jT%2F05Q%3D%3D" target="_blank">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+            </strong>
         </p>
-        <p>
-            <strong class="footer-links mr-6"><a class="has-text-black" href="tel:206-280-2585">206-280-2585</a></strong>
-            <strong class="footer-links mr-6"><a class="has-text-black" href="mailto:danielsoledad@gmail.com">Email</a></strong>
-            <strong class="footer-links mr-6"><a class="has-text-black" href="https://github.com/Tuzosdaniel12" target="_blank">GitHub</a></strong>
-            <strong class="footer-links"><a class="has-text-black" href="https://www.linkedin.com/in/daniel-soledad-1834a61b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8jusDrCiRMyQqnN8jT%2F05Q%3D%3D" target="_blank">Linkedin</a></strong>
-        </p>
-        <P>
-          <small>
-              <a class="tag is-white is-small" href="https://bulma.io/" target="_blank">BULMA</a>
-              <small>&copy; 2020</small>
-          </small>
-        </P>
+        <small>
+            <a class="tag is-white is-small" href="https://unsplash.com/photos/yEAOfWSdzgM" target="_blank">Unsplash</a>-
+            <a class="tag is-white is-small" href="https://bulma.io/" target="_blank">BULMA</a>
+        </small>
       </div>
     </footer>
 
