@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="Assets/css/newStyle.css">
     <title>Daniel Soledad Portfolio</title>
 </head>
-<body>
-  <header>
-    <nav class="navbar is-light">
+<body class="has-navbar-fixed-top">
+  <header >
+    <nav class="navbar  is-light is-fixed-top">
       <div class="container ">
         <div class ="navbar-brand">
           <a class="navbar-item " href="index.html">
@@ -38,8 +38,8 @@
   </header>
 
   <main>
-    <section class="hero is-fullheight" id="aboutme">
-        <div class="section columns is-desktop about-me-div">
+    <section class="hero is-fullheight pb-6" id="aboutme">
+        <div class="section columns is-tablet about-me-div">
           <div class="column">
             <div class="is-flex is-justify-content-center">
               <img class="rounded" src="https://avatars2.githubusercontent.com/u/68839236?s=400&u=fb2ecbc1454c8ea69d1cc3551f380ed583cd7e75&v=4">
@@ -61,12 +61,12 @@
           <div class="carousel_tracker_container" id="examples">
               <a href="https://eat-la-burger-please.herokuapp.com/" id="link-1" target="_blank">
                 <div data-target="left" class="button-container is-flex is-flex-direction-column is-justify-content-center">
-                  <i class="fas fa-chevron-left fa-lg"></i>
+                  <i class="fas fa-chevron-left fa-2x"></i>
                 </div>
                 <img class="carousel-images" id="first"  src="Assets\images\burger-example.png" alt="">
 
                 <div  data-target="right" class="button-container button-container-right is-flex is-flex-direction-column is-justify-content-center">
-                  <i class="fas fa-chevron-right fa-lg is-align-self-flex-end"></i>
+                  <i class="fas fa-chevron-right fa-2x is-align-self-flex-end"></i>
                 </div>
               </a>
           </div>
@@ -74,7 +74,7 @@
 
     <footer class="footer footer-mod pb-2 pt-2" id="contactme">
       <div class="content has-text-centered ">
-        <p>
+        <p class="mb-0">
             <strong class="footer-links mr-6">
               <a class="icon-color" href="tel:206-280-2585">
                 <i class="fas fa-phone fa-lg"></i>
