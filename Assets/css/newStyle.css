@@ -61,7 +61,7 @@ body {
   }
 
   .css-typing p {
-    border-right: .15em solid red;
+    border-right: .10em solid red;
     font-family: "Courier";
     white-space: nowrap;
     overflow: hidden;
@@ -149,6 +149,10 @@ body {
     50% {
       border-color: tranparent;
     }
+  }
+  .letter{
+    color: red;
+    font-weight: bolder;
   }
   .about-me-div{
       background-color: rgba(5, 5, 5,.8);
