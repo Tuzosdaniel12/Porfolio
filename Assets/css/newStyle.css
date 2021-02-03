@@ -61,10 +61,11 @@ body {
   }
 
   .css-typing p {
-    border-right: .10em solid red;
+    border-right: .15em solid red;
     font-family: "Courier";
     white-space: nowrap;
     overflow: hidden;
+    margin: 0 auto;
   }
   .css-typing p:nth-child(1) {
     width: 100%;
@@ -150,6 +151,7 @@ body {
       border-color: tranparent;
     }
   }
+
   .letter{
     color: red;
     font-weight: bolder;
