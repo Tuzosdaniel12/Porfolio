@@ -80,7 +80,7 @@ body {
     width: 100%;
     opacity: 0;
     -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 4s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
@@ -91,7 +91,7 @@ body {
     width: 100%;
     opacity: 0;
     -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 4s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
     -webkit-animation-fill-mode: forwards;
@@ -100,8 +100,8 @@ body {
   .css-typing p:nth-child(4) {
     width: 100%;
     opacity: 0;
-    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 4s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation: type3 4s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 12s;
     animation-delay: 12s;
     -webkit-animation-fill-mode: forwards;
