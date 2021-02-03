@@ -59,7 +59,7 @@ const renderWork = () =>{
     for (const work of listOfWork) {
         const{link, image,gitrepo,description,alt} = work
     
-    workSection = `<div class="column is-full-mobile is-half-tablet is-one-third-desktop mb-3 work-example-card" >
+    workSection = `<div class="column is-full-mobile is-half-tablet is-one-third-desktop mb-3 work-example-card card-has-ratio" >
     <div class="card">
       <div class="card-image">
         <figure class="image is-4by3">
@@ -76,11 +76,12 @@ const renderWork = () =>{
       </p>
     </div>
     <footer class="card-footer has-text-centered pt-2">
-      <small class="has-text-centered" style="width: 100%;">
+    <small class="has-text-centered" style="width: 100%;">
         <a class="tag is-black is-small" id="repo" href="${gitrepo}" target="_blank">Git Repo</a>-
         <a class="tag is-black is-small" id="demo" href="${link}" target="_blank">Live Demo</a>
-      </small>
-    </footer>
+    </small>
+  </footer>
+    
     </div>`
 
     $firstblock
