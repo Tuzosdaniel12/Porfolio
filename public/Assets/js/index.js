@@ -1,6 +1,7 @@
 const $heroEl = $('#work') 
 const  $navMenu = $('#navMenu');
 const $firstblock = $('#firstblock');
+const $iconHref = $('#icon-href');
 
 window.addEventListener('scroll', function() {
     $(".navbar-burger").removeClass("is-active");
@@ -166,12 +167,17 @@ const renderWork = () =>{
 // }
 function hideBlock(e){
     e.preventDefault();
-    if( $(this).data('target') === "home"){
+    console.log("hit")
+    if( $(this).data('target') === "home" || $(this).data('target') === "home-2"){
 
         $("#work").fadeOut('slow', function(){
             $("#aboutme").fadeOut('slow');
             $("#home").fadeIn('slow');
         });
+
+        if($(this).data('target') === "home-2"){
+            return
+        }
     
     }else if( $(this).data('target') === "about"){
 
@@ -195,4 +201,4 @@ function hideBlock(e){
 renderWork();
 // $heroEl.on("click", "[data-target]", changeImage);
 $navMenu.on("click", "[data-target]", hideBlock)
-
+$iconHref.on("click", hideBlock)
