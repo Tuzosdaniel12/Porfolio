@@ -1,0 +1,29 @@
+{
+  "name": "Porfolio",
+  "version": "1.0.0",
+  "description": "* [Task](#Task)\r * [Employers](#Employers)\r * [Acceptance Criteria](#Acceptance-Criteria)\r * [Process](#Process)\r * [HTML](#HTML)\r * [CSS](#CSS)\r * [Links](#Links)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuzosdaniel12/Porfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuzosdaniel12/Porfolio/issues"
+  },
+  "homepage": "https://github.com/Tuzosdaniel12/Porfolio#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}
