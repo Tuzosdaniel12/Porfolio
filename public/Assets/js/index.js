@@ -63,9 +63,10 @@ const renderWork = () =>{
     workSection = `<div class="column is-full-mobile is-half-tablet is-one-third-desktop mb-3 work-example-card card-has-ratio" >
     <div class="card">
       <div class="card-image">
-        <figure class="image is-4by3">
-          <img id="work-example-img" src="${image}" alt="${alt}">
-        </figure>
+        <a href="${link}" target="_blank">
+            <figure class="image is-4by3">
+            <img id="work-example-img" src="${image}" alt="${alt}">
+        </a>
       </div>
     </div>
     <div class="card-content has-text-white" id=card-content-ratio>
