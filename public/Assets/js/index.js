@@ -77,9 +77,9 @@ const renderWork = () =>{
       </p>
     </div>
     <footer class="card-footer has-text-centered pt-2">
-    <small class="has-text-centered" style="width: 100%;">
-        <a class="tag is-black is-small" id="repo" href="${gitrepo}" target="_blank">Git Repo</a>-
-        <a class="tag is-black is-small" id="demo" href="${link}" target="_blank">Live Demo</a>
+    <small class="has-text-centered has-text-danger" style="width: 100%;">
+        <a class="tag is-black has-text-danger is-size-7" id="repo" href="${gitrepo}" target="_blank">Git Repo</a>-
+        <a class="tag is-black has-text-danger is-size-7" id="demo" href="${link}" target="_blank">Live Demo</a>
     </small>
   </footer>
     
