@@ -9,14 +9,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Assets/css/newStyle.css">
+    <link rel="manifest" href="./manifest.webmanifest"/>
+    <link rel="stylesheet" href="./Assets/css/newStyle.css">
     <title>Daniel Soledad Portfolio</title>
 </head>
 <body class="has-navbar-fixed-top ">
      {{{body}}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="Assets/js/toggle.js"></script>
-    <script src="Assets/js/index.js"></script>         
+    <script src="Assets/js/index.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js").then(reg => {
+            console.log("We found your service worker file!");
+          });
+        });
+      }
+    </script>          
 </body>
 </html>
   

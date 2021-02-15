@@ -62,28 +62,27 @@ const renderWork = () =>{
     
     workSection = `<div class="column is-full-mobile is-half-tablet is-one-third-desktop mb-3 work-example-card card-has-ratio" >
     <div class="card">
-      <div class="card-image">
-        <a href="${link}" target="_blank">
-            <figure class="image is-4by3">
-            <img id="work-example-img" src="${image}" alt="${alt}">
-        </a>
-      </div>
-    </div>
-    <div class="card-content has-text-white" id=card-content-ratio>
-      <p class="is-size-6 has-text-white" id="work-tittle">
-      ${alt}
-      </p>
-      <p class="is-size-7 has-text-white" id="work-description">
-      ${description}
-      </p>
-    </div>
-    <footer class="card-footer has-text-centered pt-2">
-    <small class="has-text-centered has-text-danger" style="width: 100%;">
-        <a class="tag is-black has-text-danger is-size-7" id="repo" href="${gitrepo}" target="_blank">Git Repo</a>-
-        <a class="tag is-black has-text-danger is-size-7" id="demo" href="${link}" target="_blank">Live Demo</a>
-    </small>
-  </footer>
-    
+        <div class="card-image">
+            <a href="${link}" target="_blank">
+                <figure class="image is-4by3">
+                <img id="work-example-img" src="${image}" alt="${alt}">
+            </a>
+        </div>
+        </div>
+        <div class="card-content has-text-white" id=card-content-ratio>
+        <p class="is-size-6 has-text-white" id="work-tittle">
+        ${alt}
+        </p>
+        <p class="is-size-7 has-text-white" id="work-description">
+        ${description}
+        </p>
+        </div>
+        <footer class="card-footer has-text-centered pt-2">
+        <small class="has-text-centered has-text-danger" style="width: 100%;">
+            <a class="tag is-black has-text-danger is-size-7" id="repo" href="${gitrepo}" target="_blank">Git Repo</a>-
+            <a class="tag is-black has-text-danger is-size-7" id="demo" href="${link}" target="_blank">Live Demo</a>
+        </small>
+        </footer>
     </div>`
 
     $firstblock
@@ -91,81 +90,6 @@ const renderWork = () =>{
     }
 }
 
-
-
-
-
-// let  imagePos = 0;
-// let  imagePosTwo = listOfLinks.length;
-// let  imagePosThree = Math.floor(Math.random() * listOfLinks.length+1);
-
-
-
-// const startTimer = () =>{
-//     console.log("Hit timer")
-//     clearInterval(interval);
-//     interval = setInterval(timer, 7000);
-// }
-
-// const timer = ()=>{
-//     imagePos+=1;
-//     imagePosTwo-=1;
-//     imagePosThree = Math.floor(Math.random() * listOfLinks.length+1)
-
-//     imagePos = checkImagePos(imagePos);
-//     imagePosTwo = checkImagePos(imagePosTwo);
-//     imagePosThree = checkImagePos(imagePosThree);
- 
-//     fadeAttr(imagePos,"#first","#link-1");
-//     fadeAttr(imagePosTwo,"#second","#link-2");
-//     fadeAttr(imagePosThree,"#third","#link-3")
-// }
-
-// function changeImage(e){
-//     e.preventDefault();
-//     if( $(this).data('target') === "right"){
-//         imagePos+=1;
-//         imagePosTwo+=1;
-//         imagePosThree+=1
-//     }else{
-//         imagePos-=1;
-//         imagePosTwo-=1;
-//         imagePosThree-=1;
-//     } 
-
-//     imagePos = checkImagePos(imagePos);
-//     imagePosTwo = checkImagePos(imagePosTwo);
-//     imagePosThree = checkImagePos(imagePosThree);
-
-//     changeAttr(imagePos,"#first","#link-1");
-//     changeAttr(imagePosTwo,"#second","#link-2");
-//     changeAttr(imagePosThree,"#third","#link-3")
-// }
-
-// checkImagePos= (num) =>{
-
-//     if(num === -1){
-//         return listOfLinks.length -1
-//     }else if(num >= listOfLinks.length){
-//         console.log("hit", imagePos)
-//         return 0
-//     }
-//     return num
-// }
-
-// const fadeAttr = (pos, el,link) =>{
-//     $(el).delay(2000).fadeOut('slow', function(){
-//         $(el).attr("src", listOfLinks[pos].image).fadeIn('slow');
-//         $(link).attr("href", listOfLinks[pos].link)
-//     });
-
-// }
-// const changeAttr = (pos,el,link) =>{
-
-//     $(el).attr("src", listOfLinks[pos].image);
-//     $(link).attr("href", listOfLinks[pos].link);
-
-// }
 function hideBlock(e){
     e.preventDefault();
     console.log("hit")
@@ -198,8 +122,6 @@ function hideBlock(e){
     $(".navbar-menu").toggleClass("is-active");
 }
 
-//startTimer();
 renderWork();
-// $heroEl.on("click", "[data-target]", changeImage);
 $navMenu.on("click", "[data-target]", hideBlock)
 $iconHref.on("click", hideBlock)
